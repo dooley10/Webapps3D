@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Logos -->
+  <script src="https://kit.fontawesome.com/678920d837.js" crossorigin="anonymous"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/x3dom.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <script src="js/modelcontrols.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Logo and navbar -->
+<nav class="navbar sticky-top navbar-expand-sm navbar_fanta">
+    <!-- Brand -->
+    <div class="logo">
+        <a class="navbar-brand d-lg-none" href="#">
+        <h1>Fanta</h1>
+        <p>Be more than one flavour</p>
+        </a>
+    </div>     
+    
+    <!-- Collapsible Navbar Menu Icon-->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Link menu item button the the links class navbar-collapse selector -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Links -->
+          <ul class="navbar-nav mx-auto"> <!-- ml-auto aligns to centre -->
+            <li class="nav-item">
+              <a class="nav-link active" href="javascript:swap('home')">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="javascript:swap('fanta')">Drinks</a>
+            </li>
+            <!-- Brand logo -->
+            <div class="logo">
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                <h1>Fanta</h1>
+                <p>Be more than one flavour</p>
+                </a>
+            </div>  
+            <!-- Right Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" 
+              data-content="3D Apps is a final year and postgraduate module ...">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications" 
+              data-content="Cand no. 201751">Contact</a>
+            </li>
+          </ul>
+        </div>  
+</nav>
+<br>
+
+<!-- Home page block -->
+<div id="home" class="container main_contents">
+    <!-- Header -->
+    <div class="row">
+      <div class="col-sm-12">
+          <div id="main_3d_image">
+              <div id="main_text" class="col-xs-12 col-sm-5">
+                  <h2>Fanta Great Britain</h2>
+                  <h3>Founded by Max Keith.</h3>
+                  <p>One of the hallmarks of the brand's popularity is its unique ability to convey light-hearted 
+                      enjoyment through a variety of different flavours. There are more than 150 flavors worldwide!</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Content rows -->
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="#">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fanta.jpg" alt="Fanta">
+                </a>
+                <div class="card-body">
+                    <h3 class="card-title">Fanta</h3>
+                    <a href="https://www.coca-cola.co.uk/brands/fanta" class="btn btn-primary">Find out more...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="#">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/smartwater.jpg" alt="Smart Water">
+                </a>
+                <div class="card-body">
+                    <h3 class="card-title">Smart Water</h3>
+                    <a href="https://www.coca-cola.co.uk/brands/glaceau-smartwater" class="btn btn-primary">Find out more...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <a href="#">
+                    <img class="card-img-top img-fluid img-thumbnail" src="assets/images/costa.jpg" alt="Costa Coffee">
+                </a>
+                <div class="card-body">
+                    <h3 class="card-title">Costa Coffee</h3>
+                    <a href="https://www.coca-cola.co.uk/brands/costa-coffee" class="btn btn-primary">Find out more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fanta page block -->
+<div id="fanta" class="container-fluid main_contents" style = "display: none">
+    <div class="row">
+      <!-- X3D model column -->
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class="card text-left">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('fanta')">Fanta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:swap('smartwater')">Smart Water</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:swap('costa')">Costa Coffee</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Bootstrap 4 card body to hold in about the X3D model -->
+          <div class="card-body">
+            <h4 class="card-title">Fanta X3D Model</h4>
+            <!-- X3D code-->
+            <div class="model3D">
+              <x3d>
+                <scene>
+                  <inline nameSpaceName="model" mapDEFToID="true" url="assets/x3d/fantacan/fantacan.x3d"> </inline>
+                </scene>
+              </x3d>
+            </div>
+
+            <p class="card-text">This X3D model of this fanta can was created and animated in Cinema 4D, then exported as an FBX.
+            The FBX was imported to 3ds Max and materials, cameras and lighting was added. It was then exported to VRML97 and 
+            converted, using the instantreality transcoders, to X3D for display online.
+            <br><br>
+            Click on the can to rotate it!
+            </p>
+            
+            <h5 class="card-subtitle">Camera Views</h5>
+            <div class="camera-btns">
+                <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                <div class="btn-group ">
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font" onclick="frontcam();">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font" onclick="backcam();">Back</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font" onclick="leftcam();">Left</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font" onclick="rightcam();">Right</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font" onclick="topcam();">Top</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font" onclick="bottomcam();">Bottom</a>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div class="card text-left">
+          <div class="card-header gallery-header">
+              Gallery
+          </div>
+          <div class="card-body">
+            <a href="coke.html">
+              <img class="card-img-top img-fluid img-card" src="assets/images/fanta.jpg" alt="Fanta">
+            </a>
+            <a href="sprite.html">
+              <img class="card-img-top img-fluid img-card" src="assets/images/smartwater.jpg" alt="Smart Water">
+            </a>
+            <a href="pepper.html">
+              <img class="card-img-top img-fluid img-card" src="assets/images/costa.jpg" alt="Costa Coffee">
+            </a>
+            <p class="card-text">3D images rendered in 3ds Max 2022 with Mental Ray</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      
+      <div class="col-sm-2"></div>
+      <!--Row for descriptive text-->
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Fanta</h3>
+              <p class="card-text">
+                Bright, bubbly and popular, Fanta is the soft drink that intensifies fun.
+                Introduced in 1940, Fanta is the second oldest brand of The Coca-Cola Company. 
+                Bright, bubbly and popular, Fanta is the soft drink that intensifies fun. Introduced in 1940, 
+                Fanta is the second oldest brand of The Coca-Cola Company.
+              </p>
+              <a href="https://www.coca-cola.co.uk/brands/fanta" class="btn btn-primary">Find out more...</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<div id="smartwater" class="container-fluid main_contents" style = "display: none">
+    <div class="row">
+        <!-- X3D model column -->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('fanta')">Fanta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('smartwater')">Smart Water</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('costa')">Costa Coffee</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Bootstrap 4 card body to hold in about the X3D model -->
+            <div class="card-body">
+              <h4 class="card-title">Smart Water X3D Model</h4>
+              <!-- X3D code-->
+              <div class="model3D">
+                <x3d>
+                  <scene>
+                    <inline url="assets/x3d/smartwater/smartwater.x3d"> </inline>
+                  </scene>
+                </x3d>
+              </div>
+  
+              <p class="card-text">This X3D model of this coke can was created and animated in Cinema 4D, then exported as an FBX.
+              The FBX was imported to 3ds Max and materials, cameras and lighting was added. It was then exported to VRML97 and 
+              converted, using the instantreality transcoders, to X3D for display online.
+              <br><br>
+              Click on the bottle to rotate it!
+              </p>
+  
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header gallery-header">
+                Gallery
+            </div>
+            <div class="card-body">
+              <a href="coke.html">
+                <img class="card-img-top img-fluid img-card" src="assets/images/fanta.jpg" alt="Fanta">
+              </a>
+              <a href="sprite.html">
+                <img class="card-img-top img-fluid img-card" src="assets/images/smartwater.jpg" alt="Smart Water">
+              </a>
+              <a href="pepper.html">
+                <img class="card-img-top img-fluid img-card" src="assets/images/costa.jpg" alt="Costa Coffee">
+              </a>
+              <p class="card-text">3D images rendered in 3ds Max 2022 with Mental Ray</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+        
+        <div class="col-sm-2"></div>
+        <!--Row for descriptive text-->
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Smart Water</h3>
+                <p class="card-text">
+                  blablabla smart water or something
+                </p>
+                <a href="https://www.coca-cola.co.uk/brands/glaceau-smartwater" class="btn btn-primary">Find out more...</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-2"></div>
+      </div>
+</div>
+
+<div id="costa" class="container-fluid main_contents" style = "display: none">
+    <div class="row">
+        <!-- X3D model column -->
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('fanta')">Fanta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:swap('smartwater')">Smart Water</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="javascript:swap('costa')">Costa Coffee</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Bootstrap 4 card body to hold in about the X3D model -->
+            <div class="card-body">
+              <h4 class="card-title">Costa Coffee X3D Model</h4>
+              <!-- X3D code-->
+              <div class="model3D">
+                <x3d>
+                  <scene>
+                    <inline url="assets/x3d/costacup/costacup.x3d"> </inline>
+                  </scene>
+                </x3d>
+              </div>
+  
+              <p class="card-text">This X3D model of this costa cup was created and animated in Cinema 4D, then exported as an FBX.
+              The FBX was imported to 3ds Max and materials, cameras and lighting was added. It was then exported to VRML97 and 
+              converted, using the instantreality transcoders, to X3D for display online.
+              <br><br>
+              Click on the cup to rotate it!
+              </p>
+              
+  
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <div class="card text-left">
+            <div class="card-header gallery-header">
+                Gallery
+            </div>
+            <div class="card-body">
+              <a href="coke.html">
+                <img class="card-img-top img-fluid img-card" src="assets/images/fanta.jpg" alt="Fanta">
+              </a>
+              <a href="sprite.html">
+                <img class="card-img-top img-fluid img-card" src="assets/images/smartwater.jpg" alt="Smart Water">
+              </a>
+              <a href="pepper.html">
+                <img class="card-img-top img-fluid img-card" src="assets/images/costa.jpg" alt="Costa Coffee">
+              </a>
+              <p class="card-text">3D images rendered in 3ds Max 2022 with Mental Ray</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+        
+        <div class="col-sm-2"></div>
+        <!--Row for descriptive text-->
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Costa Coffee</h3>
+                <p class="card-text">
+                  Our iconic Signature Blend is the perfect combination and balance of delicate Arabica and strong Robusta beans, 
+                  precisely slow roasted for a minimum of 18 minutes to ensure the beans keep their hearty flavour, rich aroma, 
+                  and smooth taste.
+                </p>
+                <a href="https://www.coca-cola.co.uk/brands/costa-coffee" class="btn btn-primary">Find out more...</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-sm-2"></div>
+      </div>
+</div>
+<!-- Footer -->
+<nav class="navbar navbar-expand-sm footer">
+    <div class="container-fluid">
+        <div class="navbar-text float-left copyright">
+          <p><span class="align-baseline"></span>&copy Mobile Web 3D Applications </span></p>
+        </div>
+        <div class="navbar-text social">
+          <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+          <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+<!--JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/x3dom.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+
+</body>
+</html>

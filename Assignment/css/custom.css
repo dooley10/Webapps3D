@@ -1,0 +1,558 @@
+/* Method to declare your own fonts */
+@font-face {
+	font-family: fantaFont;
+	src: url(../assets/fonts/fanta_regular.ttf);
+}
+@font-face {
+	font-family: openSans;
+	src: url(../assets/fonts/OpenSans.TTF);
+}
+@font-face {
+	font-family: oswald;
+	src: url(../assets/fonts/Oswald.TTF);
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap */
+
+/* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+*/
+
+/*
+    NAVBAR                                      NAVBAR  
+*/
+.navbar_fanta {
+    background-color: rgb(255, 131, 0); /* Set navbar background color */
+    border-width: 0px;
+    min-height: 70px;
+}
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_fanta .navbar-brand {
+    color: rgb(245, 235, 235);
+ }
+    
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_fanta .navbar-brand:hover {
+    color: rgb(133, 219, 208);
+}
+
+/* CSS rule to style the mobile logo */
+.logo {
+    margin-top: 3px;    
+}
+
+.logo h1 {
+font-family: fantaFont; /* You don't need to repeat this for each media query as it is propagated */
+font-size: 31px;
+margin: auto;
+margin-top: -10px;
+margin-bottom: -25px;
+float: center;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+.logo p {
+font-size: 12px;
+margin: auto; /* You may have to tweak this to get a good fit */
+margin-top: 22px; /* You may have to tweak this to get a good fit */
+margin-bottom: 0px;
+float: center;
+padding-top: 0px;
+}
+
+/*
+    NAVIGATION MENU                                              NAVIGATION MENU
+*/
+
+/* CSS rules to overwrite the position of the Bootstrap menu. These are derived from the
+Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Buttons shows how to do this using Bootstrap 3, the principle should be the same: https://www.youtube.com/watch?v=7v2yC3GyDHU   
+
+There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
+*/
+
+.navbar_fanta .navbar-nav > li > a {
+    color: white;  
+}
+
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_fanta .navbar-nav > li > a:hover, 
+.navbar_fanta .navbar-nav > li > a:focus {
+    color: rgb(133, 219, 208);
+}
+
+.navbar_fanta .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_fanta .navbar-nav .nav-item > .active, 
+.navbar_fanta .navbar-nav > .active > a:hover, 
+.navbar_fanta .navbar-nav > .active > a:focus {
+    color:  rgb(0, 231, 200); /* Font color for active font */
+    font-weight: bold;
+    background-color: rgb(238, 123, 0);
+}
+
+/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+*/
+    
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_fanta .navbar-nav > li > a:hover, 
+.navbar_fanta  .navbar-nav > li > a:focus {
+    color: rgb(133, 219, 208);
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_fanta .navbar-toggler {
+    border-color: white;
+}
+
+.navbar_fanta  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar_fanta .navbar-toggler {
+    outline: none !important;
+}
+
+/*
+    MAIN CONTENTS
+*/
+/*  */
+/* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color:  rgb(0, 231, 200); /* Font color for active font */
+    font-weight: bold;
+    background-color: rgb(238, 123, 0);
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+/* All tab items */
+.nav-tabs .nav-link {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: white;  
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+/* Added this to emulate the nav-bar link styling */
+.nav-tabs .nav-link:hover {
+    color: rgb(133, 219, 208);
+    border: 1px solid transparent;
+}
+
+/* rule to style img thumbnail */
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+    FOOTER
+*/
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: rgb(255, 131, 0); /* Set navbar footer background color same as header */
+    height: 50px;
+}
+
+.navbar-text > a {
+    font-size: 10px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+}
+
+.social {
+    padding-top: 0px;
+    width: 30%;   
+}
+
+.fa-twitter-square:before {
+    content: "\f081";
+    color: turquoise;
+    font-size: 1em;
+}
+
+.fa-github-square:before {
+    content: "\f092"; 
+    color: purple;
+    font-size: 1em;
+}
+
+.fa-google-plus-square:before {
+    content: "\f0d4"; 
+    color: red;
+    font-size: 1em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: blue;
+    font-size: 1em; 
+}
+
+
+
+/*
+    BODY  
+*/
+
+/*Used everywhere on the page*/
+body {
+    background-color: rgb(221, 221, 221);
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+/*Used for main contents*/
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Used for cards*/
+.card {
+    border: 0px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(221, 221, 221);
+}
+.card-header {
+    background-color: rgb(255, 131, 0); /* Set navbar footer background color same as header */
+}
+.img-card {
+    padding: 0.25rem;
+    margin:auto;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width:80%;
+    height: auto;
+}
+/*
+    MAIN 3D IMAGE
+*/
+#main_3d_image {
+    
+    background-image: url(../assets/images/fantaSplashImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* The div block for the main_3d_image has no vertical size, 
+    so we need a height to see the background image */
+    height: 200px;
+}
+
+#main_text {
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(201, 201, 201, 0.404);
+    padding: 10px;
+    border-radius: 5px;
+}
+#main_text h2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+
+/* Some simple CSS rules for styling p, h1 to h6, etc. in the main content’s container */
+p {
+	font-family: openSans, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Oswald, sans-serif;
+	/*font-family: fantaFont;*/
+}
+
+/*
+    X3D CSS
+*/
+.gallery-header {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+	font-family: Oswald, sans-serif;
+}
+
+.gallery-header:hover {
+    color: rgb(133, 219, 208);
+    border: 1px solid transparent;
+}
+
+.model3D  {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+    height: 400px;
+}
+
+X3D, x3d {
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 100%
+}
+
+/*
+    CAMERA BUTTONS
+*/
+.camera-btns {
+    background-color: rgba(71, 71, 71, 0.3);  
+    border-color: black; 
+    border-style: solid;
+    border-width: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.camera-btns > p  {
+    font-size: 15px;
+    color: red;
+    padding-left: 0px;
+    font-weight: 900; 
+}
+
+.camera-font {
+    font-weight: 400;   
+    color: white;
+}
+
+.camera-font:hover {
+    font-weight: 700;   
+    color: rgb(212, 9, 9);
+}
+
+.btn-responsive {
+    padding: 6px 10px;
+    font-size: 90%;
+    line-height: 1.2;
+    /* Keeps text inside button */
+    white-space: normal !important;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  
+    /*
+        MAIN IMAGE
+    */
+    #main_3d_image {
+        height: 300px;
+    }
+    #main_text {
+        float: left;
+        margin-top: 7%;
+        margin-left: 55%;
+        width: 90%;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #main_text h2 {
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    #main_text h3 {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #main_text p {
+        font-size: 12px;
+        margin: 0px;
+        line-height: 1.2;
+    } 
+    /*
+        CARDS
+    */
+    .img-card {
+        max-width:48%;
+    }
+    /*
+        FOOTER
+    */
+    .footer {
+        position:absolute;
+        bottom:0;
+        width: 100%;
+        height: 60px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /*
+        MAIN IMAGE
+    */
+    #main_3d_image {
+        height: 400px;
+    }
+    /*
+        CAMERA BUTTONS
+    */
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 230%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+    /*
+        LOGO
+    */
+    .logo {
+        margin-top: 3px;    
+    }
+    
+    .logo h1 {
+    font-family: fantaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 56px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -25px;
+    float: center;
+    padding-top: 0px;
+    padding-left: 50px;
+    padding-right: 0px;
+    }
+    
+    .logo p {
+    font-size: 18px; /* You may have to tweak this to get a good fit */
+    margin-top: 22px; /* You may have to tweak this to get a good fit */
+    margin-bottom: 0px;
+    float: center;
+    padding-top: 0px;
+    padding-left: 10px;
+    }
+    /*
+        NAVBAR
+    */
+    .nav-link {
+        margin-top: 20px;
+        font-size: 22px
+    }
+    /*
+        X3D section
+    */  
+    .gallery-header {
+    font-size: 32px;
+    }
+    .img-card {
+        max-width:32%;
+    }
+    /*
+        MAIN IMAGE
+    */
+    #main_3d_image {
+        height: 600px;
+    }
+    #main_text {
+        float: left;
+        margin-top: 3%;
+        margin-left: 55%;
+        width: 90%;
+        display: block;
+        background-color: rgba(70, 70, 70, 0.205);
+        padding: 20px;
+        border-radius: 5px;
+    }
+    #main_text h2 {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    #main_text h3 {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #main_text p {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        margin: 0px;
+        line-height: 1.2;
+    } 
+    /*
+        CAMERA BUTTONS
+    */
+    .btn-responsive {
+        padding: 4px 9px;
+        font-size: 175%;
+        line-height: 1.2;
+        white-space: normal !important;
+    }
+    /*
+        FOOTER
+    */
+    body::after {
+        content: '';
+        display: block;
+        height: 75px;
+    }
+    .footer {
+        position:absolute;
+        bottom:0;
+        width: 100%;
+        height: 75px;
+     }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+
+}
+   
